@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe');
+
+.tittle{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 539px;
+height: 180px;
+}
+
+header {
+  background-color: yellow;
+  border-radius: 50px 50px 50px 50px;
+   position: fixed; 
+   top: 200px; 
+   left: 50%; 
+   transform: translate(-50%, 0); 
+   z-index: 100; 
+  font-size: 20px;
+  font-family: 'ZCOOL KuaiLe', cursive;
+}
+li {
+  display: inline;
+  align-items: center;
+  margin: 20px;
+}
+ul{
+  list-style-type: none;
+  margin: 2px;
+  padding: 20px;
+  overflow: hidden;
+}
+body {
+  background-image: url("./images/background.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img{
+  max-height: 250px;
+  border-radius: 50px;
+}
+
+.images{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top:350px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+
+}
+
+.information1 {
+  background-color: greenyellow;
+  font-family: 'ZCOOL kuaile', cursive;
+  width: 250px;
+  border-radius: 50px;
+  display: flex;
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  transform: translate(-160%, 0);
+}
+
+.information1 > p {
+  color: black;
+  padding: 3px 10px 3px 10px;
+}
+
+.seeall {
+  background-color: yellow;
+  border-radius: 50px 50px 50px 50px;
+  position:fixed;
+  top: 700px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: 'ZCOOL kuaile', cursive;
+  padding: 10px 15px;
+}
