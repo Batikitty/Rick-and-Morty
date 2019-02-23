@@ -136,3 +136,33 @@ img{
 @media only screen and (min-width:1040px) {
 
 }
+
+/*Desde aquí lo propio del html 3*/
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.flex-item:nth-child(1) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.flex-item:nth-child(2) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    color: black;
+    background-color: yellowgreen;
+    text-align: center;
+    font-family: 'ZCOOL kuaile', cursive;
+    padding: 5px 10px;
+    border-radius: 10%;
+    margin-left: 35px;
+}

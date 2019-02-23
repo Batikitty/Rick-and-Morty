@@ -24,6 +24,7 @@ var createItems = function (allInfo) {
         inf.appendChild(text);
         item.appendChild(inf);
         item.appendChild(img);
+        item.addEventListener('click', function () { redirectDetail(allInfo[index].id); });
         grid.appendChild(item);
     }
 }
@@ -38,7 +39,7 @@ var getCharacterInfo = function () {
 }
 
 window.addEventListener('scroll', function () {
-    scrollButtom ();
+    scrollButtom();
     var scrollTop = document.documentElement.scrollTop ||
         document.body.scrollTop;
     var offsetHeight = document.body.offsetHeight;
@@ -50,7 +51,7 @@ window.addEventListener('scroll', function () {
     }
 })
 
-var scrollButtom = function() {
+var scrollButtom = function () {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("top").style.display = "block";
     } else {
@@ -60,5 +61,9 @@ var scrollButtom = function() {
 
 function topFunction() {
     document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0; 
+    document.documentElement.scrollTop = 0;
+}
+
+var redirectDetail = function (id) {
+    location.href = `index3.html?id=${id}`;
 }
