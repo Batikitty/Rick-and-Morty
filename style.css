@@ -131,6 +131,15 @@ img{
   .information {
       margin-bottom: 35px;
    }
+
+   .bigContainer{
+    flex-direction: column;
+   }
+
+   .item:nth-child(2){
+       margin-top: 15px;
+       margin-bottom: 15px;
+   }
 }
 
 @media only screen and (min-width:1040px) {
