@@ -74,13 +74,6 @@ body {
     cursor: pointer;
 }
 
-@media only screen and (max-width:1040px) {
-    .grid-container{
-        grid-template-columns: auto auto auto;
-        justify-items: center;
-    }
-}
-
 @media only screen and (max-width:540px) {
     .tittle {
         max-width: 70%;
@@ -100,3 +93,11 @@ body {
         justify-items: center;
     }
 }
+
+@media only screen and (max-width:1040px) {
+    .grid-container{
+        grid-template-columns: auto auto auto;
+        justify-items: center;
+    }
+}
+
